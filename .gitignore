@@ -271,3 +271,5 @@ django_tutorial/media/
 .pytest_cache/
 
 .env
+
+ngrok

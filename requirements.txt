@@ -1,4 +1,10 @@
 asgiref==3.3.1
+certifi==2020.12.5
+chardet==4.0.0
 Django==3.1.6
+idna==2.10
 pytz==2021.1
+requests==2.25.1
 sqlparse==0.4.1
+stripe==2.55.2
+urllib3==1.26.3
