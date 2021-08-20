@@ -271,3 +271,4 @@ django_tutorial/media/
 .pytest_cache/
 
 .env
+db.sqlite3
