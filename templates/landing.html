@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Buy cool new product</title>
+</head>
+
+<body>
+    <section>
+        <div class="product">
+            <div class="description">
+                <h3>{{ product.name }}</h3>
+                <hr />
+                {% for price in prices %}
+
+                <div>
+                    <h5>${{ price.get_display_price }}</h5>
+                    <form action="{% url 'create-checkout-session' price.id %}" method="POST">
+                        {% csrf_token %}
+                        <button type="submit">Checkout</button>
+                    </form>
+                </div>
+
+                {% endfor %}
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
